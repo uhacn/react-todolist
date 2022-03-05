@@ -50,6 +50,7 @@ export default class App extends Component {
   }
   clearDone = () => {
     const todos = this.state.todos;
+    // 筛选出还未完成的 todo 
     const newTodos = todos.filter(todo => {
         return !todo.done
     })

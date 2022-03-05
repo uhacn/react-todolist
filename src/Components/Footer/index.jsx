@@ -22,7 +22,7 @@ export default class Footer extends Component {
         <input type="checkbox" onChange={this.handleAllCheck} checked={todoTotal === doneCount && todoTotal !== 0? true : false}/>
       </label>
       <span>
-        <span>已完成{doneCount}</span> / 全部{todoTotal}
+        <span>（已完成）{doneCount}</span> / {todoTotal}（全部）
       </span>
       <button className="btn btn-danger" onClick={this.handleClearDone}>清除已完成任务</button>
     </div>

@@ -27,9 +27,7 @@ export default class Item extends Component {
     }
   }
   handleClick = (id) => {
-    if (window.confirm('确定要删除吗？')) {
       this.props.deleteTodo(id)
-    }
   }
   render() {
     const { id, name, done } = this.props
